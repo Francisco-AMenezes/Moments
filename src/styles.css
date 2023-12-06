@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: #444;
-  font-family: Cambria;
+  font-family: Cambria, serif;
 }
 
 a {
@@ -14,4 +14,47 @@ a {
 
 a:hover {
   color: #dec129;
+}
+
+/* form */
+
+form {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  margin-bottom: 0.4em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 0.8em;
+  padding: 0.6em;
+  color: #777;
+}
+
+input[type="submit"] {
+  padding: 0.6em 1em;
+  background-color: #efefef;
+  border: 2px solid transparent;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+input[type="submit"]:hover{
+    color: #dec129;
+    border-color: #dec129;
+    background-color: transparent;
 }
