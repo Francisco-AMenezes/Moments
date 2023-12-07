@@ -53,8 +53,15 @@ input[type="submit"] {
   transition: 0.4s;
 }
 
-input[type="submit"]:hover{
-    color: #dec129;
-    border-color: #dec129;
-    background-color: transparent;
+input[type="submit"]:hover {
+  color: #dec129;
+  border-color: #dec129;
+  background-color: transparent;
+}
+
+.validation-error p {
+  color: #dc4545;
+  margin-top: 0.4em;
+  border-left: 3px solid #dc4545;
+  padding-left: 0.2em;
 }
