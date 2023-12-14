@@ -1,2 +1,23 @@
-<p>Você está na home page. <br> <br> Por enquanto aqui ainda está vazio, mas daqui a pouco estará preenchido.</p>
+<div class="home-container">
+  <h1>Veja o que estão compartilhando!</h1>
 
+  <!--form de busca-->
+  <div *ngIf="moments.length > 0; else noMoments">
+    <div class="moments-container">
+      <div class="moment" *ngFor="let moment of moments">
+        <img
+          src="{{ baseApiUrl }}uploads/{{ moment.image }}"
+          alt="{{ moment.title }}"
+        />
+        <h3>{{ moment.title }}</h3>
+        <p class="date">Em {{ moment.created_at }}</p>
+        <p>Comentário: {{ moment.comments!.length }}</p>
+        <a routerLink="/moments/ {{moment.id}}">Detalhes</a>
+      </div>
+    </div>
+  </div>
+  <ng-template #noMoments>
+    <h1>Ainda não há momentos cadastrados!</h1>
+    <a routerLink="/moments/new">Compartilhe o seu momento!</a>
+  </ng-template>
+</div>
