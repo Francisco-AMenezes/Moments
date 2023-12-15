@@ -15,6 +15,7 @@ import { NewMomentComponent } from './components/pages/new-moment/new-moment.com
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MomentComponent } from './components/pages/moment/moment.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NewMomentComponent,
     MomentFormComponent,
     MessagesComponent,
+    MomentComponent,
   ],
   imports: [
     BrowserModule,

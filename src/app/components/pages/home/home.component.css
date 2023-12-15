@@ -45,5 +45,26 @@ a {
 
 a:hover {
   background-color: #efefef;
-  
+}
+
+.search-container {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.search-container form {
+  width: 30%;
+  position: relative;
+}
+
+.search-container mat-icon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
 }
