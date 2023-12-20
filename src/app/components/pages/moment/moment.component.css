@@ -1,0 +1,59 @@
+.moment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 500px;
+  margin-bottom: 0 auto 1em;
+}
+
+.about-moment,
+.actions {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 1.2em;
+  align-items: center;
+  max-width: 500px;
+}
+
+.actions {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions-box {
+  display: flex;
+  margin-top: 8px;
+}
+
+.comments {
+  margin-bottom: 1em;
+  padding: 1.5em 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.edit {
+  font-size: 20px;
+}
