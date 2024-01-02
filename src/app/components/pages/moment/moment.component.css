@@ -62,3 +62,13 @@ a {
   font-size: 20px;
 }
 
+.comment-form {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.comment-form form {
+  max-width: 300px;
+}
+
